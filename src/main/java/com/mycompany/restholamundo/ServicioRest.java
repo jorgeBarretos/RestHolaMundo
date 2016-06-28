@@ -6,9 +6,13 @@
 package com.mycompany.restholamundo;
 
 import javax.ejb.Stateless;
+import javax.ws.rs.FormParam;
 import javax.ws.rs.GET;
+import static javax.ws.rs.HttpMethod.POST;
+import javax.ws.rs.POST;
 import javax.ws.rs.Path;
 import javax.ws.rs.PathParam;
+import javax.ws.rs.QueryParam;
 
 /**
  *
