@@ -18,8 +18,8 @@ import javax.ws.rs.PathParam;
 @Path("/servicio")
 public class ServicioRest {
     @GET
-    @Path("/sumar/{msg}/{msg2}")
-    public String sumarNumerosGet(@PathParam("msg") long msg, @PathParam("msg2") long msg2) {
+    @Path("/sumar")
+    public String sumarNumerosGet(@QueryParam("msg") long msg, @QueryParam("msg2") long msg2) {
         return Long.toString($sumarNumerosGet(msg, msg2));
     }
 
